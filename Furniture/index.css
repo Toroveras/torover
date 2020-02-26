@@ -1,0 +1,157 @@
+body {
+    line-height: 1;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.header {
+    width: 100%;
+    min-height: 80px;
+    background-color:cadetblue;
+    color: #fff;
+}
+
+.wrap{
+    max-width: 1200px;
+    margin: 0% auto;
+}
+
+.goods-min-cars{
+    width: 23%;
+    margin: 1%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px ;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.title{
+    width: 100%;
+    min-height: 80px;
+    background-color:cadetblue;
+    color: #fff;
+}
+
+
+.goods-min-cars img {
+max-width: 100%;
+max-height: 300px;
+background-color: lightblue;
+}
+
+
+nav {
+    width: 960px;
+    margin: 0 auto;
+   text-align: center;
+}
+
+.Colon {
+    content: '';
+    display: block;
+    height:50px ;
+    width: 100%;
+    background-color: #000000;
+    position: absolute;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style:none ;
+    height: 50px;
+}
+
+ul li{
+    float: left;
+}
+
+
+
+ul li a {
+    color: #fff;
+    height: 50px;
+    padding:0 30px ;
+    text-transform: uppercase ; 
+    text-decoration: none;
+    line-height: 50px;
+}
+
+ul li a:hover{
+    background: #d43d34;
+
+}
+
+
+.body {
+    background: url("https://media.istockphoto.com/photos/brown-wood-background-with-abstract-pattern-surface-of-natural-wooden-picture-id1038723134?k=6&m=1038723134&s=612x612&w=0&h=JhSV5_JawjICY05AKk9V3j8yiwBNh-wDeE5DH2qvzv4=") ;
+}
+
+
+/* Кнопка */
+
+.butt{
+    border: 3px solid lightblue ;
+    font-size: 30px ;
+    color: lightblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+    transition: _.5s;
+}
+
+
+.Texst {
+    font-size: 20px ;
+    background-color: lightblue;
+    color: black;
+}
+
+.butt::before,
+.butt::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: -100%;
+    opacity: .5;
+    transition: .3s;
+    z-index: -1;
+}
+
+.butt::after{
+    opacity: 1;
+    transition-delay: .2s;
+}
+
+.butt:hover{
+    color: #fff;
+}
+
+.butt:hover::before,
+.butt:hover::after{
+    left: 0;
+    background-color: #218294;
+}
